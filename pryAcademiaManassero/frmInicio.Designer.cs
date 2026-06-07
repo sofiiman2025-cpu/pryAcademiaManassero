@@ -37,7 +37,7 @@
             // 
             this.lblBienvenidos.AutoSize = true;
             this.lblBienvenidos.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenidos.Location = new System.Drawing.Point(87, 56);
+            this.lblBienvenidos.Location = new System.Drawing.Point(86, 53);
             this.lblBienvenidos.Name = "lblBienvenidos";
             this.lblBienvenidos.Size = new System.Drawing.Size(150, 27);
             this.lblBienvenidos.TabIndex = 0;
@@ -46,7 +46,7 @@
             // btnIniciar
             // 
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciar.Location = new System.Drawing.Point(119, 131);
+            this.btnIniciar.Location = new System.Drawing.Point(118, 128);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(75, 35);
             this.btnIniciar.TabIndex = 1;
