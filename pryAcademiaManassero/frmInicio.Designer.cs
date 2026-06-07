@@ -45,9 +45,9 @@
             // btnIniciar
             // 
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciar.Location = new System.Drawing.Point(125, 141);
+            this.btnIniciar.Location = new System.Drawing.Point(119, 131);
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(75, 31);
+            this.btnIniciar.Size = new System.Drawing.Size(75, 35);
             this.btnIniciar.TabIndex = 1;
             this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.UseVisualStyleBackColor = true;

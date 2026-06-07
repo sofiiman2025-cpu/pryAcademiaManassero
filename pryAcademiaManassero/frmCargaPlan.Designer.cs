@@ -35,8 +35,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(657, 450);
+            this.ClientSize = new System.Drawing.Size(632, 421);
             this.Name = "frmCargaPlan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carga de Plan";
             this.ResumeLayout(false);
 

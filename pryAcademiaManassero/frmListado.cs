@@ -16,5 +16,15 @@ namespace pryAcademiaManassero
         {
             InitializeComponent();
         }
+
+        private void frmListado_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            dgvListado.Rows.Clear();
+        }
     }
 }

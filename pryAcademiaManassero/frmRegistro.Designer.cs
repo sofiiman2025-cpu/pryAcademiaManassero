@@ -183,6 +183,7 @@
             this.Name = "frmRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
+            this.Load += new System.EventHandler(this.frmRegistro_Load);
             this.pRegistro.ResumeLayout(false);
             this.pRegistro.PerformLayout();
             this.ResumeLayout(false);

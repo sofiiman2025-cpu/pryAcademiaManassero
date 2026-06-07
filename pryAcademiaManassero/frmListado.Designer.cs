@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.rdbPlan = new System.Windows.Forms.RadioButton();
+            this.rdbNombre = new System.Windows.Forms.RadioButton();
             this.rdbTodo = new System.Windows.Forms.RadioButton();
             this.rdbCodigo = new System.Windows.Forms.RadioButton();
-            this.rdbNombre = new System.Windows.Forms.RadioButton();
-            this.rdbPlan = new System.Windows.Forms.RadioButton();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvListado = new System.Windows.Forms.DataGridView();
             this.Todo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,6 +54,38 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(162, 282);
             this.panel1.TabIndex = 0;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(66, 234);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 33);
+            this.btnBuscar.TabIndex = 5;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // rdbPlan
+            // 
+            this.rdbPlan.AutoSize = true;
+            this.rdbPlan.Location = new System.Drawing.Point(13, 185);
+            this.rdbPlan.Name = "rdbPlan";
+            this.rdbPlan.Size = new System.Drawing.Size(65, 24);
+            this.rdbPlan.TabIndex = 4;
+            this.rdbPlan.TabStop = true;
+            this.rdbPlan.Text = "Plan";
+            this.rdbPlan.UseVisualStyleBackColor = true;
+            // 
+            // rdbNombre
+            // 
+            this.rdbNombre.AutoSize = true;
+            this.rdbNombre.Location = new System.Drawing.Point(13, 128);
+            this.rdbNombre.Name = "rdbNombre";
+            this.rdbNombre.Size = new System.Drawing.Size(90, 24);
+            this.rdbNombre.TabIndex = 3;
+            this.rdbNombre.TabStop = true;
+            this.rdbNombre.Text = "Nombre";
+            this.rdbNombre.UseVisualStyleBackColor = true;
             // 
             // rdbTodo
             // 
@@ -77,51 +109,20 @@
             this.rdbCodigo.Text = "Código";
             this.rdbCodigo.UseVisualStyleBackColor = true;
             // 
-            // rdbNombre
+            // dgvListado
             // 
-            this.rdbNombre.AutoSize = true;
-            this.rdbNombre.Location = new System.Drawing.Point(13, 128);
-            this.rdbNombre.Name = "rdbNombre";
-            this.rdbNombre.Size = new System.Drawing.Size(90, 24);
-            this.rdbNombre.TabIndex = 3;
-            this.rdbNombre.TabStop = true;
-            this.rdbNombre.Text = "Nombre";
-            this.rdbNombre.UseVisualStyleBackColor = true;
-            // 
-            // rdbPlan
-            // 
-            this.rdbPlan.AutoSize = true;
-            this.rdbPlan.Location = new System.Drawing.Point(13, 185);
-            this.rdbPlan.Name = "rdbPlan";
-            this.rdbPlan.Size = new System.Drawing.Size(65, 24);
-            this.rdbPlan.TabIndex = 4;
-            this.rdbPlan.TabStop = true;
-            this.rdbPlan.Text = "Plan";
-            this.rdbPlan.UseVisualStyleBackColor = true;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(66, 234);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 33);
-            this.btnBuscar.TabIndex = 5;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Todo,
             this.Codigo,
             this.Nombre,
             this.Plan});
-            this.dataGridView1.Location = new System.Drawing.Point(180, 26);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(654, 280);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvListado.Location = new System.Drawing.Point(180, 26);
+            this.dgvListado.Name = "dgvListado";
+            this.dgvListado.RowHeadersWidth = 62;
+            this.dgvListado.RowTemplate.Height = 28;
+            this.dgvListado.Size = new System.Drawing.Size(654, 280);
+            this.dgvListado.TabIndex = 1;
             // 
             // Todo
             // 
@@ -157,14 +158,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(829, 340);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvListado);
             this.Controls.Add(this.panel1);
             this.Name = "frmListado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmListado";
+            this.Text = "Listado";
+            this.Load += new System.EventHandler(this.frmListado_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -177,7 +179,7 @@
         private System.Windows.Forms.RadioButton rdbTodo;
         private System.Windows.Forms.RadioButton rdbCodigo;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvListado;
         private System.Windows.Forms.DataGridViewTextBoxColumn Todo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
