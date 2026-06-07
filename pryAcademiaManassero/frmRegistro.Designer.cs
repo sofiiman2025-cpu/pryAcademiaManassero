@@ -33,14 +33,14 @@
             this.lblPlan = new System.Windows.Forms.Label();
             this.lblActivo = new System.Windows.Forms.Label();
             this.pRegistro = new System.Windows.Forms.Panel();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.cmbPlan = new System.Windows.Forms.ComboBox();
-            this.chkActivo = new System.Windows.Forms.CheckBox();
-            this.btnCarga = new System.Windows.Forms.Button();
-            this.btnListado = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnListado = new System.Windows.Forms.Button();
+            this.btnCarga = new System.Windows.Forms.Button();
+            this.chkActivo = new System.Windows.Forms.CheckBox();
+            this.cmbPlan = new System.Windows.Forms.ComboBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.pRegistro.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,45 +99,25 @@
             this.pRegistro.Size = new System.Drawing.Size(354, 426);
             this.pRegistro.TabIndex = 4;
             // 
-            // txtCodigo
+            // btnRegistrar
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(97, 29);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(133, 26);
-            this.txtCodigo.TabIndex = 4;
+            this.btnRegistrar.Location = new System.Drawing.Point(249, 374);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(89, 35);
+            this.btnRegistrar.TabIndex = 10;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // txtNombre
+            // btnCancelar
             // 
-            this.txtNombre.Location = new System.Drawing.Point(97, 104);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(133, 26);
-            this.txtNombre.TabIndex = 5;
-            // 
-            // cmbPlan
-            // 
-            this.cmbPlan.FormattingEnabled = true;
-            this.cmbPlan.Location = new System.Drawing.Point(97, 197);
-            this.cmbPlan.Name = "cmbPlan";
-            this.cmbPlan.Size = new System.Drawing.Size(121, 28);
-            this.cmbPlan.TabIndex = 6;
-            // 
-            // chkActivo
-            // 
-            this.chkActivo.AutoSize = true;
-            this.chkActivo.Location = new System.Drawing.Point(97, 292);
-            this.chkActivo.Name = "chkActivo";
-            this.chkActivo.Size = new System.Drawing.Size(22, 21);
-            this.chkActivo.TabIndex = 7;
-            this.chkActivo.UseVisualStyleBackColor = true;
-            // 
-            // btnCarga
-            // 
-            this.btnCarga.Location = new System.Drawing.Point(146, 283);
-            this.btnCarga.Name = "btnCarga";
-            this.btnCarga.Size = new System.Drawing.Size(136, 36);
-            this.btnCarga.TabIndex = 5;
-            this.btnCarga.Text = "Carga de plan";
-            this.btnCarga.UseVisualStyleBackColor = true;
+            this.btnCancelar.Location = new System.Drawing.Point(134, 374);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(89, 35);
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnListado
             // 
@@ -149,23 +129,49 @@
             this.btnListado.UseVisualStyleBackColor = true;
             this.btnListado.Click += new System.EventHandler(this.btnListado_Click);
             // 
-            // btnCancelar
+            // btnCarga
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(134, 374);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(89, 35);
-            this.btnCancelar.TabIndex = 9;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCarga.Location = new System.Drawing.Point(146, 283);
+            this.btnCarga.Name = "btnCarga";
+            this.btnCarga.Size = new System.Drawing.Size(136, 36);
+            this.btnCarga.TabIndex = 5;
+            this.btnCarga.Text = "Carga de plan";
+            this.btnCarga.UseVisualStyleBackColor = true;
+            this.btnCarga.Click += new System.EventHandler(this.btnCarga_Click);
             // 
-            // btnRegistrar
+            // chkActivo
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(249, 374);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(89, 35);
-            this.btnRegistrar.TabIndex = 10;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.chkActivo.AutoSize = true;
+            this.chkActivo.Location = new System.Drawing.Point(97, 292);
+            this.chkActivo.Name = "chkActivo";
+            this.chkActivo.Size = new System.Drawing.Size(22, 21);
+            this.chkActivo.TabIndex = 7;
+            this.chkActivo.UseVisualStyleBackColor = true;
+            // 
+            // cmbPlan
+            // 
+            this.cmbPlan.FormattingEnabled = true;
+            this.cmbPlan.Items.AddRange(new object[] {
+            "Semestre",
+            "Año"});
+            this.cmbPlan.Location = new System.Drawing.Point(97, 197);
+            this.cmbPlan.Name = "cmbPlan";
+            this.cmbPlan.Size = new System.Drawing.Size(121, 28);
+            this.cmbPlan.TabIndex = 6;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(97, 104);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(133, 26);
+            this.txtNombre.TabIndex = 5;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(97, 29);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(133, 26);
+            this.txtCodigo.TabIndex = 4;
             // 
             // frmRegistro
             // 
