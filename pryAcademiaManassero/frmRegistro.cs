@@ -122,5 +122,12 @@ namespace pryAcademiaManassero
                 btnRegistrar.PerformClick();
             }
         }
+
+        private void volverALaPáginaPricnipalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmPrincipal frmPrincipal = new frmPrincipal();
+            frmPrincipal.ShowDialog();
+        }
     }
 }

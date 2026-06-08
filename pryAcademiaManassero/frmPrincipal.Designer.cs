@@ -47,7 +47,7 @@
             this.listadoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(375, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(373, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuPrincipal";
             // 
@@ -64,20 +64,21 @@
             // menuAlumno
             // 
             this.menuAlumno.Name = "menuAlumno";
-            this.menuAlumno.Size = new System.Drawing.Size(223, 34);
+            this.menuAlumno.Size = new System.Drawing.Size(270, 34);
             this.menuAlumno.Text = "Alumno";
+            this.menuAlumno.Click += new System.EventHandler(this.menuAlumno_Click);
             // 
             // menuRegistro
             // 
             this.menuRegistro.Name = "menuRegistro";
-            this.menuRegistro.Size = new System.Drawing.Size(223, 34);
+            this.menuRegistro.Size = new System.Drawing.Size(270, 34);
             this.menuRegistro.Text = "Registro";
             this.menuRegistro.Click += new System.EventHandler(this.materiaToolStripMenuItem_Click);
             // 
             // menuCarga
             // 
             this.menuCarga.Name = "menuCarga";
-            this.menuCarga.Size = new System.Drawing.Size(223, 34);
+            this.menuCarga.Size = new System.Drawing.Size(270, 34);
             this.menuCarga.Text = "Carga de Plan";
             this.menuCarga.Click += new System.EventHandler(this.menuCarga_Click);
             // 
@@ -93,7 +94,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(375, 322);
+            this.ClientSize = new System.Drawing.Size(373, 208);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;

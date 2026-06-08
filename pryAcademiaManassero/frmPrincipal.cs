@@ -44,5 +44,12 @@ namespace pryAcademiaManassero
         {
           
         }
+
+        private void menuAlumno_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAlumno frmAlumno = new frmAlumno();
+            frmAlumno.ShowDialog();
+        }
     }
 }
