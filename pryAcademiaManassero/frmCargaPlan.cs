@@ -35,5 +35,10 @@ namespace pryAcademiaManassero
         {
             
         }
+
+        private void frmCargaPlan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

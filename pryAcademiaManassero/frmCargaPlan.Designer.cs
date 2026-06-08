@@ -109,6 +109,7 @@
             this.Name = "frmCargaPlan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carga de Plan";
+            this.Load += new System.EventHandler(this.frmCargaPlan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

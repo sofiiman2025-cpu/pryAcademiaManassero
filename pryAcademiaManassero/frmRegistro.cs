@@ -114,5 +114,13 @@ namespace pryAcademiaManassero
         {
 
         }
+
+        private void btnRegistrar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnRegistrar.PerformClick();
+            }
+        }
     }
 }
