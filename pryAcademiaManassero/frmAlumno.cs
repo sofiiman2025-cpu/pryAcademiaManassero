@@ -30,5 +30,17 @@ namespace pryAcademiaManassero
             frmPrincipal frmPrincipal = new frmPrincipal();
             frmPrincipal.ShowDialog();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            txtDNI.Clear();
+            txtNombre.Clear();
+            txtApellido.Clear();
+            txtDireccion.Clear();
+            txtContacto.Clear();
+
+
+
+        }
     }
 }

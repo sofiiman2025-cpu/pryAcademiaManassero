@@ -13,8 +13,9 @@ namespace pryAcademiaManassero
 {
     public partial class frmCargaPlan : Form
     {
-        string[] arrauyPlanes = new string[5];
+        string[] arrayPlanes = new string[10];
         int varInice = 0;
+        
         public frmCargaPlan()
         {
             InitializeComponent();
@@ -22,7 +23,28 @@ namespace pryAcademiaManassero
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
-            
+            if (txtNombre.Text != "")
+            {
+                arrayPlanes[varInice] = txtNombre.Text;
+                MessageBox.Show("Ingrese el plan", "Carga de planes", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                txtNombre.Focus();
+                return;
+
+            }
+            else
+            {
+                arrayPlanes[varInice] = txtNombre.Text;
+                varInice++;
+                MessageBox.Show("Plan cargado correctamente", "Carga de planes", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                txtNombre.Focus();
+                return;
+                if (varInice >= arrayPlanes.Length)
+                {
+                    btnCargar.Enabled = false;
+                }
+            }
 
         }
 
@@ -33,7 +55,8 @@ namespace pryAcademiaManassero
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-            
+
+
         }
 
         private void frmCargaPlan_Load(object sender, EventArgs e)

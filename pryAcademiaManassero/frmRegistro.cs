@@ -129,5 +129,10 @@ namespace pryAcademiaManassero
             frmPrincipal frmPrincipal = new frmPrincipal();
             frmPrincipal.ShowDialog();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
