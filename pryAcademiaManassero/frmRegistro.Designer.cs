@@ -42,42 +42,49 @@
             this.cmbPlan = new System.Windows.Forms.ComboBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.volverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pRegistro.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(16, 32);
+            this.lblCodigo.Location = new System.Drawing.Point(11, 21);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(59, 20);
+            this.lblCodigo.Size = new System.Drawing.Size(40, 13);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(16, 104);
+            this.lblNombre.Location = new System.Drawing.Point(11, 68);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(65, 20);
+            this.lblNombre.Size = new System.Drawing.Size(44, 13);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre";
             // 
             // lblPlan
             // 
             this.lblPlan.AutoSize = true;
-            this.lblPlan.Location = new System.Drawing.Point(16, 197);
+            this.lblPlan.Location = new System.Drawing.Point(11, 128);
+            this.lblPlan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPlan.Name = "lblPlan";
-            this.lblPlan.Size = new System.Drawing.Size(40, 20);
+            this.lblPlan.Size = new System.Drawing.Size(28, 13);
             this.lblPlan.TabIndex = 2;
             this.lblPlan.Text = "Plan";
             // 
             // lblActivo
             // 
             this.lblActivo.AutoSize = true;
-            this.lblActivo.Location = new System.Drawing.Point(16, 293);
+            this.lblActivo.Location = new System.Drawing.Point(11, 190);
+            this.lblActivo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblActivo.Name = "lblActivo";
-            this.lblActivo.Size = new System.Drawing.Size(52, 20);
+            this.lblActivo.Size = new System.Drawing.Size(37, 13);
             this.lblActivo.TabIndex = 3;
             this.lblActivo.Text = "Activo";
             // 
@@ -95,16 +102,18 @@
             this.pRegistro.Controls.Add(this.lblActivo);
             this.pRegistro.Controls.Add(this.lblCodigo);
             this.pRegistro.Controls.Add(this.lblPlan);
-            this.pRegistro.Location = new System.Drawing.Point(28, 12);
+            this.pRegistro.Location = new System.Drawing.Point(11, 40);
+            this.pRegistro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pRegistro.Name = "pRegistro";
-            this.pRegistro.Size = new System.Drawing.Size(354, 426);
+            this.pRegistro.Size = new System.Drawing.Size(236, 274);
             this.pRegistro.TabIndex = 4;
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(249, 374);
+            this.btnRegistrar.Location = new System.Drawing.Point(166, 243);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(89, 35);
+            this.btnRegistrar.Size = new System.Drawing.Size(59, 23);
             this.btnRegistrar.TabIndex = 10;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -112,9 +121,10 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(134, 374);
+            this.btnCancelar.Location = new System.Drawing.Point(89, 243);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(89, 35);
+            this.btnCancelar.Size = new System.Drawing.Size(59, 23);
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -122,9 +132,10 @@
             // 
             // btnListado
             // 
-            this.btnListado.Location = new System.Drawing.Point(8, 374);
+            this.btnListado.Location = new System.Drawing.Point(5, 243);
+            this.btnListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnListado.Name = "btnListado";
-            this.btnListado.Size = new System.Drawing.Size(89, 35);
+            this.btnListado.Size = new System.Drawing.Size(59, 23);
             this.btnListado.TabIndex = 8;
             this.btnListado.Text = "Listado";
             this.btnListado.UseVisualStyleBackColor = true;
@@ -132,9 +143,10 @@
             // 
             // btnCarga
             // 
-            this.btnCarga.Location = new System.Drawing.Point(146, 283);
+            this.btnCarga.Location = new System.Drawing.Point(97, 184);
+            this.btnCarga.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCarga.Name = "btnCarga";
-            this.btnCarga.Size = new System.Drawing.Size(136, 36);
+            this.btnCarga.Size = new System.Drawing.Size(91, 23);
             this.btnCarga.TabIndex = 5;
             this.btnCarga.Text = "Carga de plan";
             this.btnCarga.UseVisualStyleBackColor = true;
@@ -143,9 +155,10 @@
             // chkActivo
             // 
             this.chkActivo.AutoSize = true;
-            this.chkActivo.Location = new System.Drawing.Point(97, 292);
+            this.chkActivo.Location = new System.Drawing.Point(65, 190);
+            this.chkActivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkActivo.Name = "chkActivo";
-            this.chkActivo.Size = new System.Drawing.Size(22, 21);
+            this.chkActivo.Size = new System.Drawing.Size(15, 14);
             this.chkActivo.TabIndex = 7;
             this.chkActivo.UseVisualStyleBackColor = true;
             // 
@@ -155,40 +168,66 @@
             this.cmbPlan.Items.AddRange(new object[] {
             "Semestre",
             "Año"});
-            this.cmbPlan.Location = new System.Drawing.Point(97, 197);
+            this.cmbPlan.Location = new System.Drawing.Point(65, 128);
+            this.cmbPlan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbPlan.Name = "cmbPlan";
-            this.cmbPlan.Size = new System.Drawing.Size(121, 28);
+            this.cmbPlan.Size = new System.Drawing.Size(82, 21);
             this.cmbPlan.TabIndex = 6;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(97, 104);
+            this.txtNombre.Location = new System.Drawing.Point(65, 68);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(133, 26);
+            this.txtNombre.Size = new System.Drawing.Size(90, 20);
             this.txtNombre.TabIndex = 5;
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(97, 29);
+            this.txtCodigo.Location = new System.Drawing.Point(65, 19);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(133, 26);
+            this.txtCodigo.Size = new System.Drawing.Size(90, 20);
             this.txtCodigo.TabIndex = 4;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.volverToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(261, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // volverToolStripMenuItem
+            // 
+            this.volverToolStripMenuItem.Name = "volverToolStripMenuItem";
+            this.volverToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.volverToolStripMenuItem.Text = "Volver";
+            this.volverToolStripMenuItem.Click += new System.EventHandler(this.volverToolStripMenuItem_Click);
             // 
             // frmRegistro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(411, 450);
+            this.ClientSize = new System.Drawing.Size(261, 325);
             this.Controls.Add(this.pRegistro);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
             this.Load += new System.EventHandler(this.frmRegistro_Load);
             this.pRegistro.ResumeLayout(false);
             this.pRegistro.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -207,5 +246,7 @@
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnListado;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem volverToolStripMenuItem;
     }
 }
