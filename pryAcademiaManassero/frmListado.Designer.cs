@@ -39,11 +39,11 @@
             this.rdbTodo = new System.Windows.Forms.RadioButton();
             this.rdbCodigo = new System.Windows.Forms.RadioButton();
             this.dgvListado = new System.Windows.Forms.DataGridView();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.volverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.volverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -88,6 +88,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(80, 21);
             this.comboBox1.TabIndex = 6;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnBuscar
             // 
@@ -163,23 +164,6 @@
             this.dgvListado.Size = new System.Drawing.Size(511, 183);
             this.dgvListado.TabIndex = 1;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.volverToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(631, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // volverToolStripMenuItem
-            // 
-            this.volverToolStripMenuItem.Name = "volverToolStripMenuItem";
-            this.volverToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.volverToolStripMenuItem.Text = "Volver";
-            this.volverToolStripMenuItem.Click += new System.EventHandler(this.volverToolStripMenuItem_Click);
-            // 
             // Codigo
             // 
             this.Codigo.HeaderText = "Codigo";
@@ -200,6 +184,24 @@
             this.Plan.MinimumWidth = 8;
             this.Plan.Name = "Plan";
             this.Plan.Width = 150;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.volverToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(631, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // volverToolStripMenuItem
+            // 
+            this.volverToolStripMenuItem.Name = "volverToolStripMenuItem";
+            this.volverToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.volverToolStripMenuItem.Text = "Volver";
+            this.volverToolStripMenuItem.Click += new System.EventHandler(this.volverToolStripMenuItem_Click);
             // 
             // frmListado
             // 

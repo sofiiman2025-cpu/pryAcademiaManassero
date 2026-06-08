@@ -30,6 +30,8 @@ namespace pryAcademiaManassero
         private void btnListado_Click(object sender, EventArgs e)
         {
             frmListado frm = new frmListado();
+            // Pass the current matrix to the list form so the grid can display it
+            frm.arrListado = matMaterias;
             frm.Show();
            
         }
@@ -47,6 +49,12 @@ namespace pryAcademiaManassero
             }
             else
             {
+                if (indiceFila >= matMaterias.GetLength(0))
+                {
+                    MessageBox.Show("No se pueden registrar más filas.", "Límite alcanzado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 matMaterias[indiceFila, 0] = txtCodigo.Text;
                 matMaterias[indiceFila, 1] = txtNombre.Text;
                 matMaterias[indiceFila, 2] = cmbPlan.Text;
@@ -69,6 +77,9 @@ namespace pryAcademiaManassero
               "\nNombre: " + txtNombre.Text +
                 "\nPlan: " + cmbPlan.SelectedItem.ToString() +
                 "\nEstado: " + estado);
+
+            // Increment the index so the next registration goes to the next row
+            indiceFila++;
         }
 
         private void btnCarga_Click(object sender, EventArgs e)
@@ -97,6 +108,11 @@ namespace pryAcademiaManassero
             this.Hide();
             frmPrincipal frmPrincipal = new frmPrincipal();
             frmPrincipal.ShowDialog();
+        }
+
+        private void pRegistro_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

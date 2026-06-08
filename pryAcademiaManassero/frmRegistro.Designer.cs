@@ -103,15 +103,16 @@
             this.pRegistro.Controls.Add(this.lblCodigo);
             this.pRegistro.Controls.Add(this.lblPlan);
             this.pRegistro.Location = new System.Drawing.Point(11, 40);
-            this.pRegistro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pRegistro.Margin = new System.Windows.Forms.Padding(2);
             this.pRegistro.Name = "pRegistro";
             this.pRegistro.Size = new System.Drawing.Size(236, 274);
             this.pRegistro.TabIndex = 4;
+            this.pRegistro.Paint += new System.Windows.Forms.PaintEventHandler(this.pRegistro_Paint);
             // 
             // btnRegistrar
             // 
             this.btnRegistrar.Location = new System.Drawing.Point(166, 243);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(59, 23);
             this.btnRegistrar.TabIndex = 10;
@@ -122,7 +123,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(89, 243);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(59, 23);
             this.btnCancelar.TabIndex = 9;
@@ -133,7 +134,7 @@
             // btnListado
             // 
             this.btnListado.Location = new System.Drawing.Point(5, 243);
-            this.btnListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnListado.Margin = new System.Windows.Forms.Padding(2);
             this.btnListado.Name = "btnListado";
             this.btnListado.Size = new System.Drawing.Size(59, 23);
             this.btnListado.TabIndex = 8;
@@ -144,7 +145,7 @@
             // btnCarga
             // 
             this.btnCarga.Location = new System.Drawing.Point(97, 184);
-            this.btnCarga.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCarga.Margin = new System.Windows.Forms.Padding(2);
             this.btnCarga.Name = "btnCarga";
             this.btnCarga.Size = new System.Drawing.Size(91, 23);
             this.btnCarga.TabIndex = 5;
@@ -156,7 +157,7 @@
             // 
             this.chkActivo.AutoSize = true;
             this.chkActivo.Location = new System.Drawing.Point(65, 190);
-            this.chkActivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkActivo.Margin = new System.Windows.Forms.Padding(2);
             this.chkActivo.Name = "chkActivo";
             this.chkActivo.Size = new System.Drawing.Size(15, 14);
             this.chkActivo.TabIndex = 7;
@@ -170,7 +171,7 @@
             "Semestre",
             "Año"});
             this.cmbPlan.Location = new System.Drawing.Point(65, 128);
-            this.cmbPlan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbPlan.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPlan.Name = "cmbPlan";
             this.cmbPlan.Size = new System.Drawing.Size(82, 21);
             this.cmbPlan.TabIndex = 6;
@@ -178,7 +179,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(65, 68);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(90, 20);
             this.txtNombre.TabIndex = 5;
@@ -186,7 +187,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(65, 19);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(90, 20);
             this.txtCodigo.TabIndex = 4;
@@ -218,7 +219,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
