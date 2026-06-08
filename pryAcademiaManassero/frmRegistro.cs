@@ -29,10 +29,8 @@ namespace pryAcademiaManassero
 
         private void btnListado_Click(object sender, EventArgs e)
         {
-            frmListado frmListado = new frmListado();
-            this.Hide();
-            frmListado.ShowDialog();
-            this.Show();
+            frmListado frm = new frmListado();
+            frm.Show();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -82,7 +80,10 @@ namespace pryAcademiaManassero
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            txtCodigo.Clear();
+            txtNombre.Clear();
+            cmbPlan.SelectedIndex = -1;
+            chkActivo.Checked = false;
         }
 
         private void frmRegistro_Load(object sender, EventArgs e)

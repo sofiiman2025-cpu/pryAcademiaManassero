@@ -34,7 +34,7 @@
             this.lstPlanes = new System.Windows.Forms.ListBox();
             this.btnListar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnCargar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -82,15 +82,15 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnCancel
+            // btnCargar
             // 
-            this.btnCancel.Location = new System.Drawing.Point(209, 189);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 5;
-            this.btnCancel.Text = "Cargar";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.btnCargar.Location = new System.Drawing.Point(209, 189);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(75, 23);
+            this.btnCargar.TabIndex = 5;
+            this.btnCargar.Text = "Cargar";
+            this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
             // frmCargaPlan
             // 
@@ -98,14 +98,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(289, 220);
-            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.lstPlanes);
             this.Controls.Add(this.cmbNombre);
             this.Controls.Add(this.lblNombre);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmCargaPlan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carga de Plan";
@@ -121,6 +121,6 @@
         private System.Windows.Forms.ListBox lstPlanes;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnCargar;
     }
 }

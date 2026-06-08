@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -12,14 +13,17 @@ namespace pryAcademiaManassero
 {
     public partial class frmCargaPlan : Form
     {
+        string[] arrauyPlanes = new string[5];
+        int varInice = 0;
         public frmCargaPlan()
         {
             InitializeComponent();
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btnCargar_Click(object sender, EventArgs e)
         {
-            lstPlanes.Items.Add(cmbNombre.Text);
+            
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -29,11 +33,7 @@ namespace pryAcademiaManassero
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-            cmbNombre.Items.Clear();
-
-            cmbNombre.Items.Add("Plan 1");
-            cmbNombre.Items.Add("Plan 2");
-            cmbNombre.Items.Add("Plan 3");
+            
         }
     }
 }
