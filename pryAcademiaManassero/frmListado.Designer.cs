@@ -39,12 +39,11 @@
             this.rdbTodo = new System.Windows.Forms.RadioButton();
             this.rdbCodigo = new System.Windows.Forms.RadioButton();
             this.dgvListado = new System.Windows.Forms.DataGridView();
-            this.Todo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.volverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.volverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -60,7 +59,7 @@
             this.panel1.Controls.Add(this.rdbNombre);
             this.panel1.Controls.Add(this.rdbTodo);
             this.panel1.Controls.Add(this.rdbCodigo);
-            this.panel1.Location = new System.Drawing.Point(8, 39);
+            this.panel1.Location = new System.Drawing.Point(11, 37);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(160, 183);
@@ -153,24 +152,33 @@
             // 
             this.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Todo,
             this.Codigo,
             this.Nombre,
             this.Plan});
-            this.dgvListado.Location = new System.Drawing.Point(172, 39);
+            this.dgvListado.Location = new System.Drawing.Point(175, 37);
             this.dgvListado.Margin = new System.Windows.Forms.Padding(2);
             this.dgvListado.Name = "dgvListado";
             this.dgvListado.RowHeadersWidth = 62;
             this.dgvListado.RowTemplate.Height = 28;
-            this.dgvListado.Size = new System.Drawing.Size(660, 183);
+            this.dgvListado.Size = new System.Drawing.Size(511, 183);
             this.dgvListado.TabIndex = 1;
             // 
-            // Todo
+            // menuStrip1
             // 
-            this.Todo.HeaderText = "Todo";
-            this.Todo.MinimumWidth = 8;
-            this.Todo.Name = "Todo";
-            this.Todo.Width = 150;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.volverToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(631, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // volverToolStripMenuItem
+            // 
+            this.volverToolStripMenuItem.Name = "volverToolStripMenuItem";
+            this.volverToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.volverToolStripMenuItem.Text = "Volver";
+            this.volverToolStripMenuItem.Click += new System.EventHandler(this.volverToolStripMenuItem_Click);
             // 
             // Codigo
             // 
@@ -193,29 +201,12 @@
             this.Plan.Name = "Plan";
             this.Plan.Width = 150;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.volverToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(852, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // volverToolStripMenuItem
-            // 
-            this.volverToolStripMenuItem.Name = "volverToolStripMenuItem";
-            this.volverToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.volverToolStripMenuItem.Text = "Volver";
-            this.volverToolStripMenuItem.Click += new System.EventHandler(this.volverToolStripMenuItem_Click);
-            // 
             // frmListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(852, 233);
+            this.ClientSize = new System.Drawing.Size(631, 226);
             this.Controls.Add(this.dgvListado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
@@ -245,14 +236,13 @@
         private System.Windows.Forms.RadioButton rdbCodigo;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView dgvListado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Todo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Plan;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem volverToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Plan;
     }
 }

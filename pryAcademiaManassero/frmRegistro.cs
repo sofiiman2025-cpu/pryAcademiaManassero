@@ -31,6 +31,7 @@ namespace pryAcademiaManassero
         {
             frmListado frm = new frmListado();
             frm.Show();
+           
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
