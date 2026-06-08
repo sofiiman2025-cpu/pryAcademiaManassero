@@ -12,6 +12,7 @@ namespace pryAcademiaManassero
 {
     public partial class frmInicio : Form
     {
+       
         public frmInicio()
         {
             InitializeComponent();
@@ -19,10 +20,16 @@ namespace pryAcademiaManassero
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            frmRegistro frmRegistro = new frmRegistro();
+            
             this.Hide();
-            frmRegistro.ShowDialog();
-            this.Show();
+            frmPrincipal frmPrincipal = new frmPrincipal();
+            frmPrincipal.ShowDialog();
+
+        }
+
+        private void frmInicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

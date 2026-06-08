@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAlumno = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRegistro = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCarga = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@
             this.listadoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(270, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(250, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -59,6 +59,26 @@
             this.registroToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.registroToolStripMenuItem.Text = "Registro";
             // 
+            // menuAlumno
+            // 
+            this.menuAlumno.Name = "menuAlumno";
+            this.menuAlumno.Size = new System.Drawing.Size(147, 22);
+            this.menuAlumno.Text = "Alumno";
+            // 
+            // menuRegistro
+            // 
+            this.menuRegistro.Name = "menuRegistro";
+            this.menuRegistro.Size = new System.Drawing.Size(147, 22);
+            this.menuRegistro.Text = "Registro";
+            this.menuRegistro.Click += new System.EventHandler(this.materiaToolStripMenuItem_Click);
+            // 
+            // menuCarga
+            // 
+            this.menuCarga.Name = "menuCarga";
+            this.menuCarga.Size = new System.Drawing.Size(147, 22);
+            this.menuCarga.Text = "Carga de Plan";
+            this.menuCarga.Click += new System.EventHandler(this.menuCarga_Click);
+            // 
             // listadoToolStripMenuItem
             // 
             this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
@@ -66,38 +86,19 @@
             this.listadoToolStripMenuItem.Text = "Listado";
             this.listadoToolStripMenuItem.Click += new System.EventHandler(this.listadoToolStripMenuItem_Click);
             // 
-            // menuAlumno
-            // 
-            this.menuAlumno.Name = "menuAlumno";
-            this.menuAlumno.Size = new System.Drawing.Size(180, 22);
-            this.menuAlumno.Text = "Alumno";
-            // 
-            // menuRegistro
-            // 
-            this.menuRegistro.Name = "menuRegistro";
-            this.menuRegistro.Size = new System.Drawing.Size(180, 22);
-            this.menuRegistro.Text = "Registro";
-            this.menuRegistro.Click += new System.EventHandler(this.materiaToolStripMenuItem_Click);
-            // 
-            // menuCarga
-            // 
-            this.menuCarga.Name = "menuCarga";
-            this.menuCarga.Size = new System.Drawing.Size(180, 22);
-            this.menuCarga.Text = "Carga de Plan";
-            this.menuCarga.Click += new System.EventHandler(this.menuCarga_Click);
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(270, 218);
+            this.ClientSize = new System.Drawing.Size(250, 209);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

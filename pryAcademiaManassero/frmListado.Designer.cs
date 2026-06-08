@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListado));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.rdbPlan = new System.Windows.Forms.RadioButton();
             this.rdbNombre = new System.Windows.Forms.RadioButton();
@@ -40,11 +43,11 @@
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.volverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -57,16 +60,40 @@
             this.panel1.Controls.Add(this.rdbNombre);
             this.panel1.Controls.Add(this.rdbTodo);
             this.panel1.Controls.Add(this.rdbCodigo);
-            this.panel1.Location = new System.Drawing.Point(8, 16);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(8, 39);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(160, 183);
             this.panel1.TabIndex = 0;
             // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(72, 120);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(80, 21);
+            this.comboBox3.TabIndex = 8;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(72, 83);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(80, 21);
+            this.comboBox2.TabIndex = 7;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(72, 46);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(80, 21);
+            this.comboBox1.TabIndex = 6;
+            // 
             // btnBuscar
             // 
             this.btnBuscar.Location = new System.Drawing.Point(102, 160);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(50, 21);
             this.btnBuscar.TabIndex = 5;
@@ -78,7 +105,7 @@
             // 
             this.rdbPlan.AutoSize = true;
             this.rdbPlan.Location = new System.Drawing.Point(9, 120);
-            this.rdbPlan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbPlan.Margin = new System.Windows.Forms.Padding(2);
             this.rdbPlan.Name = "rdbPlan";
             this.rdbPlan.Size = new System.Drawing.Size(46, 17);
             this.rdbPlan.TabIndex = 4;
@@ -90,7 +117,7 @@
             // 
             this.rdbNombre.AutoSize = true;
             this.rdbNombre.Location = new System.Drawing.Point(9, 83);
-            this.rdbNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbNombre.Margin = new System.Windows.Forms.Padding(2);
             this.rdbNombre.Name = "rdbNombre";
             this.rdbNombre.Size = new System.Drawing.Size(62, 17);
             this.rdbNombre.TabIndex = 3;
@@ -102,7 +129,7 @@
             // 
             this.rdbTodo.AutoSize = true;
             this.rdbTodo.Location = new System.Drawing.Point(9, 12);
-            this.rdbTodo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbTodo.Margin = new System.Windows.Forms.Padding(2);
             this.rdbTodo.Name = "rdbTodo";
             this.rdbTodo.Size = new System.Drawing.Size(50, 17);
             this.rdbTodo.TabIndex = 1;
@@ -114,7 +141,7 @@
             // 
             this.rdbCodigo.AutoSize = true;
             this.rdbCodigo.Location = new System.Drawing.Point(9, 46);
-            this.rdbCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.rdbCodigo.Name = "rdbCodigo";
             this.rdbCodigo.Size = new System.Drawing.Size(58, 17);
             this.rdbCodigo.TabIndex = 2;
@@ -130,8 +157,8 @@
             this.Codigo,
             this.Nombre,
             this.Plan});
-            this.dgvListado.Location = new System.Drawing.Point(172, 16);
-            this.dgvListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvListado.Location = new System.Drawing.Point(172, 39);
+            this.dgvListado.Margin = new System.Windows.Forms.Padding(2);
             this.dgvListado.Name = "dgvListado";
             this.dgvListado.RowHeadersWidth = 62;
             this.dgvListado.RowTemplate.Height = 28;
@@ -166,29 +193,22 @@
             this.Plan.Name = "Plan";
             this.Plan.Width = 150;
             // 
-            // comboBox1
+            // menuStrip1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(72, 46);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(80, 21);
-            this.comboBox1.TabIndex = 6;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.volverToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(852, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // comboBox2
+            // volverToolStripMenuItem
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(72, 83);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(80, 21);
-            this.comboBox2.TabIndex = 7;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(72, 120);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(80, 21);
-            this.comboBox3.TabIndex = 8;
+            this.volverToolStripMenuItem.Name = "volverToolStripMenuItem";
+            this.volverToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.volverToolStripMenuItem.Text = "Volver";
+            this.volverToolStripMenuItem.Click += new System.EventHandler(this.volverToolStripMenuItem_Click);
             // 
             // frmListado
             // 
@@ -198,8 +218,10 @@
             this.ClientSize = new System.Drawing.Size(852, 233);
             this.Controls.Add(this.dgvListado);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmListado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado";
@@ -207,7 +229,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -227,5 +252,7 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem volverToolStripMenuItem;
     }
 }

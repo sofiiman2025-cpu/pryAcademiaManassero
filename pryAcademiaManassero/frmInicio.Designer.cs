@@ -37,18 +37,20 @@
             // 
             this.lblBienvenidos.AutoSize = true;
             this.lblBienvenidos.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenidos.Location = new System.Drawing.Point(86, 53);
+            this.lblBienvenidos.Location = new System.Drawing.Point(57, 34);
+            this.lblBienvenidos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBienvenidos.Name = "lblBienvenidos";
-            this.lblBienvenidos.Size = new System.Drawing.Size(150, 27);
+            this.lblBienvenidos.Size = new System.Drawing.Size(104, 19);
             this.lblBienvenidos.TabIndex = 0;
             this.lblBienvenidos.Text = "¡Bienvenidos!";
             // 
             // btnIniciar
             // 
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciar.Location = new System.Drawing.Point(118, 128);
+            this.btnIniciar.Location = new System.Drawing.Point(79, 83);
+            this.btnIniciar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(75, 35);
+            this.btnIniciar.Size = new System.Drawing.Size(50, 23);
             this.btnIniciar.TabIndex = 1;
             this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.UseVisualStyleBackColor = true;
@@ -56,16 +58,18 @@
             // 
             // frmInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(330, 244);
+            this.ClientSize = new System.Drawing.Size(220, 159);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.lblBienvenidos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.frmInicio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

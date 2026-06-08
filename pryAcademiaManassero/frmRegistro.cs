@@ -65,7 +65,7 @@ namespace pryAcademiaManassero
             matMaterias[indiceFila, 3] = estado;
 
             MessageBox.Show(
-              "registro completo\n\n" +
+              "Registro completo\n\n" +
               "Código: " + txtCodigo.Text +
               "\nNombre: " + txtNombre.Text +
                 "\nPlan: " + cmbPlan.SelectedItem.ToString() +

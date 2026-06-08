@@ -12,6 +12,7 @@ namespace pryAcademiaManassero
 {
     public partial class frmPrincipal : Form
     {
+        
         public frmPrincipal()
         {
             InitializeComponent();
@@ -37,6 +38,11 @@ namespace pryAcademiaManassero
             this.Hide();
             frmCargaPlan frmCargaPlan = new frmCargaPlan();
             frmCargaPlan.ShowDialog();
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+          
         }
     }
 }

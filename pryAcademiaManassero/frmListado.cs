@@ -12,6 +12,7 @@ namespace pryAcademiaManassero
 {
     public partial class frmListado : Form
     {
+        public string[,] arrListado = new string[4, 5];
         public frmListado()
         {
             InitializeComponent();
@@ -25,6 +26,21 @@ namespace pryAcademiaManassero
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             dgvListado.Rows.Clear();
+            for (int i = 0; i < arrListado.GetLength(0); i++)
+            {
+                if (arrListado[i,0] != null)
+                {
+                    dgvListado.Rows.Add(arrListado[i,0], arrListado[i,1], 
+                        arrListado[i,2], arrListado[i,3]);
+                }
+            }
+        }
+
+        private void volverToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmPrincipal frmPrincipal = new frmPrincipal();
+            frmPrincipal.ShowDialog();
         }
     }
 }
