@@ -40,14 +40,16 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registroToolStripMenuItem,
             this.listadoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(250, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(375, 35);
             this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Text = "menuPrincipal";
             // 
             // registroToolStripMenuItem
             // 
@@ -56,45 +58,46 @@
             this.menuRegistro,
             this.menuCarga});
             this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
-            this.registroToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.registroToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
             this.registroToolStripMenuItem.Text = "Registro";
             // 
             // menuAlumno
             // 
             this.menuAlumno.Name = "menuAlumno";
-            this.menuAlumno.Size = new System.Drawing.Size(147, 22);
+            this.menuAlumno.Size = new System.Drawing.Size(223, 34);
             this.menuAlumno.Text = "Alumno";
             // 
             // menuRegistro
             // 
             this.menuRegistro.Name = "menuRegistro";
-            this.menuRegistro.Size = new System.Drawing.Size(147, 22);
+            this.menuRegistro.Size = new System.Drawing.Size(223, 34);
             this.menuRegistro.Text = "Registro";
             this.menuRegistro.Click += new System.EventHandler(this.materiaToolStripMenuItem_Click);
             // 
             // menuCarga
             // 
             this.menuCarga.Name = "menuCarga";
-            this.menuCarga.Size = new System.Drawing.Size(147, 22);
+            this.menuCarga.Size = new System.Drawing.Size(223, 34);
             this.menuCarga.Text = "Carga de Plan";
             this.menuCarga.Click += new System.EventHandler(this.menuCarga_Click);
             // 
             // listadoToolStripMenuItem
             // 
             this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
-            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(85, 29);
             this.listadoToolStripMenuItem.Text = "Listado";
             this.listadoToolStripMenuItem.Click += new System.EventHandler(this.listadoToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(250, 209);
+            this.ClientSize = new System.Drawing.Size(375, 322);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";

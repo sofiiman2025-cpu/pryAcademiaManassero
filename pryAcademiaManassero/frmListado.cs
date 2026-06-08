@@ -26,22 +26,15 @@ namespace pryAcademiaManassero
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             dgvListado.Rows.Clear();
-
-            if (arrListado == null)
-            {
-                MessageBox.Show("No hay datos para mostrar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
             for (int i = 0; i < arrListado.GetLength(0); i++)
             {
-                if (!string.IsNullOrWhiteSpace(arrListado[i, 0]))
+                if (arrListado[i,0] != null)
                 {
-                    // Expecting: 0=Codigo, 1=Nombre, 2=Plan, 3=Estado
-                    dgvListado.Rows.Add(arrListado[i, 0], arrListado[i, 1],
-                        arrListado[i, 2], arrListado[i, 3]);
+                    dgvListado.Rows.Add(arrListado[i, 0], arrListado[i, 1], arrListado[i, 2], arrListado[i, 3]);
                 }
             }
+            
+            
         }
 
         private void volverToolStripMenuItem_Click(object sender, EventArgs e)
