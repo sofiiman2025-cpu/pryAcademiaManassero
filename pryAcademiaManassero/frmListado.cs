@@ -12,7 +12,7 @@ namespace pryAcademiaManassero
 {
     public partial class frmListado : Form
     {
-        public string[,] arrListado; // will be assigned from frmRegistro
+        public string[,] arrListado = new string[4, 5]; // will be assigned from frmRegistro
         public frmListado()
         {
             InitializeComponent();
@@ -20,19 +20,15 @@ namespace pryAcademiaManassero
 
         private void frmListado_Load(object sender, EventArgs e)
         {
-
+            dgvListado.Columns.Add("Codigo", "Código");
+            dgvListado.Columns.Add("Nombre", "Nombre");
+            dgvListado.Columns.Add("Plan", "Plan");
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             dgvListado.Rows.Clear();
-            for (int i = 0; i < arrListado.GetLength(0); i++)
-            {
-                if (arrListado[i,0] != null)
-                {
-                    dgvListado.Rows.Add(arrListado[i, 0], arrListado[i, 1], arrListado[i, 2], arrListado[i, 3]);
-                }
-            }
+           
             
             
         }
@@ -50,6 +46,11 @@ namespace pryAcademiaManassero
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void dgvListado_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

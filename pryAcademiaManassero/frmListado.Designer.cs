@@ -157,8 +157,9 @@
             this.dgvListado.Name = "dgvListado";
             this.dgvListado.RowHeadersWidth = 62;
             this.dgvListado.RowTemplate.Height = 28;
-            this.dgvListado.Size = new System.Drawing.Size(766, 282);
+            this.dgvListado.Size = new System.Drawing.Size(517, 282);
             this.dgvListado.TabIndex = 1;
+            this.dgvListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListado_CellContentClick);
             // 
             // Codigo
             // 
