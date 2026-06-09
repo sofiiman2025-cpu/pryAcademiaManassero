@@ -38,8 +38,20 @@ namespace pryAcademiaManassero
             txtApellido.Clear();
             txtDireccion.Clear();
             txtContacto.Clear();
+            dtpFecha.Value = DateTime.Now;
 
 
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+           MessageBox.Show($"DNI: {txtDNI.Text}\nNombre: {txtNombre.Text}\nApellido: {txtApellido.Text}\nDirección: {txtDireccion.Text}\nContacto: {txtContacto.Text}\nFecha de Nacimiento: {dtpFecha.Value.ToShortDateString()}",
+                "Información del Alumno", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -37,7 +37,6 @@
             this.lblDirección = new System.Windows.Forms.Label();
             this.lblContacto = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.txtDireccion = new System.Windows.Forms.TextBox();
@@ -123,18 +122,9 @@
             this.lblFecha.TabIndex = 9;
             this.lblFecha.Text = "Fecha de nacimiento";
             // 
-            // btnEditar
-            // 
-            this.btnEditar.Location = new System.Drawing.Point(458, 296);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 30);
-            this.btnEditar.TabIndex = 10;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(588, 296);
+            this.btnEliminar.Location = new System.Drawing.Point(474, 296);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 30);
             this.btnEliminar.TabIndex = 11;
@@ -165,12 +155,13 @@
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(324, 296);
+            this.btnListar.Location = new System.Drawing.Point(588, 296);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(75, 30);
             this.btnListar.TabIndex = 15;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // menuStrip1
             // 
@@ -180,7 +171,7 @@
             this.volverALaPáginaPrincipalToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(711, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(677, 33);
             this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -196,13 +187,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(711, 359);
+            this.ClientSize = new System.Drawing.Size(677, 337);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.txtContacto);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblContacto);
             this.Controls.Add(this.lblDirección);
@@ -232,7 +222,6 @@
         private System.Windows.Forms.Label lblDirección;
         private System.Windows.Forms.Label lblContacto;
         private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.TextBox txtDireccion;

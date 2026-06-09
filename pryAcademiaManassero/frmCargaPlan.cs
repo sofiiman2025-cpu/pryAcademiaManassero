@@ -67,5 +67,13 @@ namespace pryAcademiaManassero
         {
 
         }
+
+        private void volverALaPáginaPrincipalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmPrincipal frmPrincipal = new frmPrincipal();
+            frmPrincipal.ShowDialog();
+
+        }
     }
 }
