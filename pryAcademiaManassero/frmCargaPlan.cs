@@ -48,8 +48,10 @@ namespace pryAcademiaManassero
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            txtNombre.Clear();
+            lstPlanes.Items.Clear();
         }
+        
 
         private void btnListar_Click(object sender, EventArgs e)
         {
