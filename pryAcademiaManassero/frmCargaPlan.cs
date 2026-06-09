@@ -14,7 +14,7 @@ namespace pryAcademiaManassero
     public partial class frmCargaPlan : Form
     {
         string[] arrayPlanes = new string[10];
-        int varInice = 0;
+        int varIndice = 0;
         
         public frmCargaPlan()
         {
@@ -23,29 +23,27 @@ namespace pryAcademiaManassero
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text != "")
+            if (txtNombre.Text == "")
             {
-                arrayPlanes[varInice] = txtNombre.Text;
-                MessageBox.Show("Ingrese el plan", "Carga de planes", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                arrayPlanes[varIndice] = txtNombre.Text;
+                MessageBox.Show("Ingrese el plan", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtNombre.Focus();
                 return;
-
             }
             else
             {
-                arrayPlanes[varInice] = txtNombre.Text;
-                varInice++;
-                MessageBox.Show("Plan cargado correctamente", "Carga de planes", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                arrayPlanes[varIndice] = txtNombre.Text;
+                varIndice++;
+                MessageBox.Show("Plan registrado", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtNombre.Clear();
                 txtNombre.Focus();
-                return;
-                if (varInice >= arrayPlanes.Length)
+                if (varIndice == 10)
                 {
                     btnCargar.Enabled = false;
                 }
-            }
 
+
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -55,7 +53,11 @@ namespace pryAcademiaManassero
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-
+            lstPlanes.Items.Clear();
+            for (int count = 0; count < varIndice; count++)
+            {
+                lstPlanes.Items.Add(arrayPlanes[count]);
+            }
 
         }
 
