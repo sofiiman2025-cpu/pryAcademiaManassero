@@ -15,10 +15,7 @@ namespace pryAcademiaManassero
     {
         public DateTime varInicioSesion;
 
-        int varCodigo;
-        string varNombre;
-        string varPlan;
-        bool varActivo;
+        
 
         public int indiceFila = 0;
         public string[,] matMaterias = new string[10, 5];
@@ -58,6 +55,8 @@ namespace pryAcademiaManassero
                 matMaterias[indiceFila, 0] = txtCodigo.Text;
                 matMaterias[indiceFila, 1] = txtNombre.Text;
                 matMaterias[indiceFila, 2] = cmbPlan.Text;
+                matMaterias[indiceFila,3] = chkActivo.Checked ? "Activo" : "Inactivo";
+                indiceFila++;
             }
 
             if (chkActivo.Checked)
