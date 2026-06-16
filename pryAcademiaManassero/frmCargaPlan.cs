@@ -42,7 +42,6 @@ namespace pryAcademiaManassero
                     btnCargar.Enabled = false;
                 }
 
-
             }
         }
 
@@ -58,7 +57,10 @@ namespace pryAcademiaManassero
             lstPlanes.Items.Clear();
             for (int count = 0; count < varIndice; count++)
             {
-                lstPlanes.Items.Add(arrayPlanes[count]);
+                if (arrayPlanes[count] != null)
+                {
+                    lstPlanes.Items.Add(arrayPlanes[count]);
+                }
             }
 
             lstPlanes.Visible = true;
