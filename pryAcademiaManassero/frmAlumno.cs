@@ -45,8 +45,42 @@ namespace pryAcademiaManassero
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-           MessageBox.Show($"DNI: {txtDNI.Text}\nNombre: {txtNombre.Text}\nApellido: {txtApellido.Text}\nDirección: {txtDireccion.Text}\nContacto: {txtContacto.Text}\nFecha de Nacimiento: {dtpFecha.Value.ToShortDateString()}",
+            if (txtDNI == null)
+            {
+                MessageBox.Show("Ingrese el DNI", "Datos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }
+            if (txtApellido == null)
+            {
+                MessageBox.Show("Ingrese el apellido", "Datos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            if (txtContacto == null)
+            {
+                MessageBox.Show("Ingrese el contacto", "Datos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }
+            if (txtDireccion == null)
+            {
+                MessageBox.Show("Ingrese una dirección", "Datos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            if (txtNombre == null)
+            {
+                MessageBox.Show("Ingrese el nombre", "Datos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            if (dtpFecha.Value > DateTime.Now)
+            {
+                MessageBox.Show("La fecha de nacimiento no puede ser futura", "Datos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            
+            else
+            {
+                MessageBox.Show($"DNI: {txtDNI.Text}\nNombre: {txtNombre.Text}\nApellido: {txtApellido.Text}\nDirección: {txtDireccion.Text}\nContacto: {txtContacto.Text}\nFecha de Nacimiento: {dtpFecha.Value.ToShortDateString()}",
                 "Información del Alumno", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
+            
+           
 
         }
 
