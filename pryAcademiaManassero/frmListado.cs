@@ -39,18 +39,13 @@ namespace pryAcademiaManassero
             {
                 for (int i = 0; i < arrListado.GetLength(0); i++)
                 {
-                    AgregarMateria(i);
+                    if (txtBuscar.Text == arrListado[i,0])
+                    {
+                        AgregarMateria(i);
+                    }                    
                 }
             }
             if (rdbTodo.Checked)
-            {
-                for (int i = 0; i < arrListado.GetLength(0); i++)
-                {
-                    AgregarMateria(i);
-                }
-
-            }
-            if (rdbCodigo.Checked)
             {
                 for (int i = 0; i < arrListado.GetLength(0); i++)
                 {

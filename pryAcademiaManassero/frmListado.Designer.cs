@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListado));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.rdbPlan = new System.Windows.Forms.RadioButton();
             this.rdbNombre = new System.Windows.Forms.RadioButton();
@@ -44,6 +41,7 @@
             this.Plan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.volverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -51,9 +49,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.comboBox3);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.txtBuscar);
             this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.rdbPlan);
             this.panel1.Controls.Add(this.rdbNombre);
@@ -62,37 +58,12 @@
             this.panel1.Location = new System.Drawing.Point(11, 37);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(160, 183);
+            this.panel1.Size = new System.Drawing.Size(213, 183);
             this.panel1.TabIndex = 0;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(72, 120);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(80, 21);
-            this.comboBox3.TabIndex = 8;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(72, 83);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(80, 21);
-            this.comboBox2.TabIndex = 7;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(72, 46);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(80, 21);
-            this.comboBox1.TabIndex = 6;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(102, 160);
+            this.btnBuscar.Location = new System.Drawing.Point(148, 157);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(50, 21);
@@ -156,7 +127,7 @@
             this.Codigo,
             this.Nombre,
             this.Plan});
-            this.dgvListado.Location = new System.Drawing.Point(175, 37);
+            this.dgvListado.Location = new System.Drawing.Point(244, 37);
             this.dgvListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvListado.Name = "dgvListado";
             this.dgvListado.RowHeadersWidth = 62;
@@ -194,7 +165,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(631, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(700, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -206,12 +177,19 @@
             this.volverToolStripMenuItem.Text = "Volver a la página principal";
             this.volverToolStripMenuItem.Click += new System.EventHandler(this.volverToolStripMenuItem_Click);
             // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(98, 12);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(100, 20);
+            this.txtBuscar.TabIndex = 6;
+            // 
             // frmListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(631, 226);
+            this.ClientSize = new System.Drawing.Size(700, 226);
             this.Controls.Add(this.dgvListado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
@@ -241,13 +219,11 @@
         private System.Windows.Forms.RadioButton rdbCodigo;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView dgvListado;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem volverToolStripMenuItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Plan;
+        private System.Windows.Forms.TextBox txtBuscar;
     }
 }
