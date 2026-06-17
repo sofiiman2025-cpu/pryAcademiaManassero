@@ -28,8 +28,21 @@ namespace pryAcademiaManassero
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             dgvListado.Rows.Clear();
-           
-            
+
+            if (!rdbCodigo.Checked && !rdbNombre.Checked && !rdbPlan.Checked && !rdbTodo.Checked)
+            {
+                MessageBox.Show("Seleccione un criterio de búsqueda", "Búsqueda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            if (rdbTodo.Checked)
+            {
+                for (int i = 0; i < arrListado.GetLength(0); i++)
+                {
+
+                }
+            }
+                 
             
         }
 
@@ -54,5 +67,14 @@ namespace pryAcademiaManassero
         {
 
         }
+
+
+        private void AgregarMateria(int indice)
+        {
+            if (!string.IsNullOrWhiteSpace(arrListado[indice, 0]))
+            {
+                dgvListado.Rows.Add(arrListado[indice, 0], arrListado[indice, 1], arrListado[indice, 2]);
+            }
+        } 
     }
 }
