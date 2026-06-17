@@ -12,7 +12,7 @@ namespace pryAcademiaManassero
 {
     public partial class frmListado : Form
     {
-        public string[,] arrListado = new string[4, 5]; // will be assigned from frmRegistro
+        public string[,] arrListado = new string[4, 5]; //También asignado a frmRegistro
         public frmListado()
         {
             InitializeComponent();
