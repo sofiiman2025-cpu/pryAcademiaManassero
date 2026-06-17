@@ -35,15 +35,44 @@ namespace pryAcademiaManassero
                 return;
             }
 
+            if (rdbCodigo.Checked)
+            {
+                for (int i = 0; i < arrListado.GetLength(0); i++)
+                {
+                    AgregarMateria(i);
+                }
+            }
             if (rdbTodo.Checked)
             {
                 for (int i = 0; i < arrListado.GetLength(0); i++)
                 {
+                    AgregarMateria(i);
+                }
 
+            }
+            if (rdbCodigo.Checked)
+            {
+                for (int i = 0; i < arrListado.GetLength(0); i++)
+                {
+                    AgregarMateria(i);
+                }
+
+            }
+
+            if (rdbPlan.Checked)
+            {
+                for (int i = 0; i < arrListado.GetLength(0); i++)
+                {
+                    AgregarMateria(i);
                 }
             }
-                 
-            
+            if (rdbNombre.Checked)
+            {
+                for (int i = 0; i < arrListado.GetLength(0); i++)
+                {
+                    AgregarMateria(i);
+                }
+            }
         }
 
         private void volverToolStripMenuItem_Click(object sender, EventArgs e)
