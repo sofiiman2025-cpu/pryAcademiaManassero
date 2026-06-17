@@ -37,7 +37,9 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.volverALaPáginaPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pPlanes = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
+            this.pPlanes.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -52,7 +54,7 @@
             // lstPlanes
             // 
             this.lstPlanes.FormattingEnabled = true;
-            this.lstPlanes.Location = new System.Drawing.Point(12, 61);
+            this.lstPlanes.Location = new System.Drawing.Point(22, 3);
             this.lstPlanes.Name = "lstPlanes";
             this.lstPlanes.Size = new System.Drawing.Size(181, 108);
             this.lstPlanes.TabIndex = 2;
@@ -60,7 +62,7 @@
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(29, 185);
+            this.btnListar.Location = new System.Drawing.Point(1, 61);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(75, 23);
             this.btnListar.TabIndex = 3;
@@ -70,7 +72,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(123, 185);
+            this.btnCancelar.Location = new System.Drawing.Point(90, 61);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 4;
@@ -80,7 +82,7 @@
             // 
             // btnCargar
             // 
-            this.btnCargar.Location = new System.Drawing.Point(214, 185);
+            this.btnCargar.Location = new System.Drawing.Point(186, 61);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(75, 23);
             this.btnCargar.TabIndex = 5;
@@ -104,7 +106,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(289, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(274, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -115,17 +117,26 @@
             this.volverALaPáginaPrincipalToolStripMenuItem.Text = "Volver a la página principal";
             this.volverALaPáginaPrincipalToolStripMenuItem.Click += new System.EventHandler(this.volverALaPáginaPrincipalToolStripMenuItem_Click);
             // 
+            // pPlanes
+            // 
+            this.pPlanes.Controls.Add(this.lstPlanes);
+            this.pPlanes.Location = new System.Drawing.Point(13, 90);
+            this.pPlanes.Name = "pPlanes";
+            this.pPlanes.Size = new System.Drawing.Size(231, 113);
+            this.pPlanes.TabIndex = 8;
+            this.pPlanes.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
             // frmCargaPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(289, 212);
+            this.ClientSize = new System.Drawing.Size(274, 212);
+            this.Controls.Add(this.pPlanes);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnListar);
-            this.Controls.Add(this.lstPlanes);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -137,6 +148,7 @@
             this.Load += new System.EventHandler(this.frmCargaPlan_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.pPlanes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +164,6 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem volverALaPáginaPrincipalToolStripMenuItem;
+        private System.Windows.Forms.Panel pPlanes;
     }
 }
