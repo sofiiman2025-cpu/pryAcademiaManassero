@@ -61,6 +61,7 @@ namespace pryAcademiaManassero
                 lstPlanes.Items.Add(arrayPlanes[count]);
             }
 
+            lstPlanes.Visible = true;
         }
 
         private void frmCargaPlan_Load(object sender, EventArgs e)

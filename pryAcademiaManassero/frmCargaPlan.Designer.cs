@@ -43,29 +43,26 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(15, 55);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombre.Location = new System.Drawing.Point(10, 36);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(65, 20);
+            this.lblNombre.Size = new System.Drawing.Size(44, 13);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre";
             // 
             // lstPlanes
             // 
             this.lstPlanes.FormattingEnabled = true;
-            this.lstPlanes.ItemHeight = 20;
-            this.lstPlanes.Location = new System.Drawing.Point(18, 89);
-            this.lstPlanes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lstPlanes.Location = new System.Drawing.Point(12, 61);
             this.lstPlanes.Name = "lstPlanes";
-            this.lstPlanes.Size = new System.Drawing.Size(270, 164);
+            this.lstPlanes.Size = new System.Drawing.Size(181, 108);
             this.lstPlanes.TabIndex = 2;
+            this.lstPlanes.Visible = false;
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(36, 291);
-            this.btnListar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnListar.Location = new System.Drawing.Point(29, 185);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(112, 35);
+            this.btnListar.Size = new System.Drawing.Size(75, 23);
             this.btnListar.TabIndex = 3;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
@@ -73,10 +70,9 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(177, 291);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancelar.Location = new System.Drawing.Point(123, 185);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(112, 35);
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -84,10 +80,9 @@
             // 
             // btnCargar
             // 
-            this.btnCargar.Location = new System.Drawing.Point(314, 291);
-            this.btnCargar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCargar.Location = new System.Drawing.Point(214, 185);
             this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(112, 35);
+            this.btnCargar.Size = new System.Drawing.Size(75, 23);
             this.btnCargar.TabIndex = 5;
             this.btnCargar.Text = "Cargar";
             this.btnCargar.UseVisualStyleBackColor = true;
@@ -95,36 +90,37 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(98, 55);
+            this.txtNombre.Location = new System.Drawing.Point(65, 36);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(190, 26);
+            this.txtNombre.Size = new System.Drawing.Size(128, 20);
             this.txtNombre.TabIndex = 6;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.volverALaPáginaPrincipalToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(434, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(289, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // volverALaPáginaPrincipalToolStripMenuItem
             // 
             this.volverALaPáginaPrincipalToolStripMenuItem.Name = "volverALaPáginaPrincipalToolStripMenuItem";
-            this.volverALaPáginaPrincipalToolStripMenuItem.Size = new System.Drawing.Size(240, 29);
+            this.volverALaPáginaPrincipalToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.volverALaPáginaPrincipalToolStripMenuItem.Text = "Volver a la página principal";
             this.volverALaPáginaPrincipalToolStripMenuItem.Click += new System.EventHandler(this.volverALaPáginaPrincipalToolStripMenuItem_Click);
             // 
             // frmCargaPlan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(434, 338);
+            this.ClientSize = new System.Drawing.Size(289, 212);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.btnCancelar);
@@ -134,6 +130,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmCargaPlan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carga de Plan";

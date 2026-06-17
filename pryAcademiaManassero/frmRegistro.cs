@@ -56,7 +56,7 @@ namespace pryAcademiaManassero
                 matMaterias[indiceFila, 1] = txtNombre.Text;
                 matMaterias[indiceFila, 2] = cmbPlan.Text;
                 matMaterias[indiceFila,3] = chkActivo.Checked ? "Activo" : "Inactivo";
-                indiceFila++;
+                indiceFila++; //Apuntamos a la siguiente fila para el próximo registro
             }
 
             if (chkActivo.Checked)
@@ -111,7 +111,7 @@ namespace pryAcademiaManassero
 
         private void pRegistro_Paint(object sender, PaintEventArgs e)
         {
-
+        
         }
 
         private void btnRegistrar_KeyDown(object sender, KeyEventArgs e)
