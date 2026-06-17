@@ -85,5 +85,18 @@ namespace pryAcademiaManassero
         {
 
         }
+
+        private void txtDNI_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDNI_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; //Solo deje ingresar dígitos y teclas de control
+            }
+        }
     }
 }
