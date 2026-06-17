@@ -79,9 +79,6 @@ namespace pryAcademiaManassero
                 "Información del Alumno", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             
-            
-           
-
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
