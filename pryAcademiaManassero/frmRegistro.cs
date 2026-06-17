@@ -79,6 +79,13 @@ namespace pryAcademiaManassero
 
             // Increment the index so the next registration goes to the next row
             indiceFila++;
+
+            txtCodigo.Clear();
+            txtNombre.Clear();
+            cmbPlan.Items.Clear();
+            chkActivo.Checked = false;
+
+
         }
 
         private void btnCarga_Click(object sender, EventArgs e)
