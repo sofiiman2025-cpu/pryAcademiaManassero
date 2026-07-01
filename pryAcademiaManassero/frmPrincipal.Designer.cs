@@ -47,7 +47,7 @@
             this.listadoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(373, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(373, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuPrincipal";
             // 
@@ -64,21 +64,21 @@
             // menuAlumno
             // 
             this.menuAlumno.Name = "menuAlumno";
-            this.menuAlumno.Size = new System.Drawing.Size(270, 34);
+            this.menuAlumno.Size = new System.Drawing.Size(223, 34);
             this.menuAlumno.Text = "Alumno";
             this.menuAlumno.Click += new System.EventHandler(this.menuAlumno_Click);
             // 
             // menuRegistro
             // 
             this.menuRegistro.Name = "menuRegistro";
-            this.menuRegistro.Size = new System.Drawing.Size(270, 34);
+            this.menuRegistro.Size = new System.Drawing.Size(223, 34);
             this.menuRegistro.Text = "Registro";
             this.menuRegistro.Click += new System.EventHandler(this.materiaToolStripMenuItem_Click);
             // 
             // menuCarga
             // 
             this.menuCarga.Name = "menuCarga";
-            this.menuCarga.Size = new System.Drawing.Size(270, 34);
+            this.menuCarga.Size = new System.Drawing.Size(223, 34);
             this.menuCarga.Text = "Carga de Plan";
             this.menuCarga.Click += new System.EventHandler(this.menuCarga_Click);
             // 
@@ -102,6 +102,7 @@
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

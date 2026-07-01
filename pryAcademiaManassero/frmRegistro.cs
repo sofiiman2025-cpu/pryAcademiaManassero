@@ -27,7 +27,6 @@ namespace pryAcademiaManassero
         private void btnListado_Click(object sender, EventArgs e)
         {
             frmListado frm = new frmListado();
-            // Pass the current matrix to the list form so the grid can display it
             frm.arrListado = matMaterias;
             frm.Show();
            
@@ -77,12 +76,11 @@ namespace pryAcademiaManassero
                 "\nPlan: " + cmbPlan.SelectedItem.ToString() +
                 "\nEstado: " + estado);
 
-            // Increment the index so the next registration goes to the next row
-            indiceFila++;
+           
 
             txtCodigo.Clear();
             txtNombre.Clear();
-            cmbPlan.Items.Clear();
+            cmbPlan.SelectedIndex = -1;
             chkActivo.Checked = false;
 
 
