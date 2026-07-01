@@ -99,6 +99,11 @@ namespace pryAcademiaManassero
             {
                 dgvListado.Rows.Add(arrListado[indice, 0], arrListado[indice, 1], arrListado[indice, 2]);
             }
-        } 
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
